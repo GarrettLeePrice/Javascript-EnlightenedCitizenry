@@ -1,5 +1,7 @@
 <ul>
+  <h1>Committees in the Senate</h1>
   {{#each model as |committee|}}
-    <li> {{committee.chamber}}{{committee.name}}{{committee.committee_id}}</li>
+    <li> <p>Name: {{committee.name}}</p><p>Office: {{committee.office}}</p><p>Phone: {{committee.phone}}</p><p>Committee ID: {{committee.committee_id}}</p></li>
+    <hr>
   {{/each}}
 </ul>
